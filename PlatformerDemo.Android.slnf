@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "path": "PlatformerDemo.sln",
+    "projects": [
+      "PlatformerDemo.Game\\PlatformerDemo.Game.csproj",
+      "PlatformerDemo.Resources\\PlatformerDemo.Resources.csproj",
+      "PlatformerDemo.Android\\PlatformerDemo.Android.csproj"
+    ]
+  }
+}

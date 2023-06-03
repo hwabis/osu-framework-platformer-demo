@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-android</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>PlatformerDemo.Android</RootNamespace>
+    <AssemblyName>PlatformerDemo.Android</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PlatformerDemo.Game\PlatformerDemo.Game.csproj" />
+    <ProjectReference Include="..\PlatformerDemo.Resources\PlatformerDemo.Resources.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="ppy.osu.Framework.Android" Version="2023.521.0" />
+  </ItemGroup>
+</Project>
