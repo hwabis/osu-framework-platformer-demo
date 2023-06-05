@@ -8,7 +8,8 @@ namespace Zlelda.Game
     public partial class CameraContainer : Container
     {
         public Vector2 TargetPosition = Vector2.Zero;
-        public float SmoothingFactor = 0.01f;
+
+        private const float smoothing_factor = 0.01f;
 
         public CameraContainer()
         {
@@ -21,7 +22,7 @@ namespace Zlelda.Game
         {
             base.Update();
 
-            Position = Vector2.Lerp(Position, -TargetPosition, SmoothingFactor * (float)Time.Elapsed);
+            Position = Vector2.Lerp(Position, -TargetPosition, smoothing_factor * (float)Time.Elapsed);
         }
     }
 }

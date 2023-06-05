@@ -53,18 +53,7 @@ namespace Zlelda.Game
                     velocity.X = 0;
             }
 
-            bool pointIsOnAPath = false;
-
-            foreach (Path path in Paths)
-            {
-                if (isPointOnPath(Position, path))
-                {
-                    pointIsOnAPath = true;
-                    break;
-                }
-            }
-
-            if (!pointIsOnAPath)
+            if (!IsGrounded.Value)
                 velocity.Y += 1.5f * (float)Time.Elapsed;
 
             Vector2 pendingPosition = Position + velocity * (float)Time.Elapsed * 0.001f;
